@@ -1,0 +1,19 @@
+/**************
+ * Admin Styles
+ *************/
+
+img.bgnp_admin_help {
+	cursor: pointer;
+}
+
+table.bgnp_admin_help, table.bgnp_admin_help th {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+table.bgnp_admin_help th {
+	vertical-align: text-top;
+	text-align: left;
+	padding: 5px 10px;
+}

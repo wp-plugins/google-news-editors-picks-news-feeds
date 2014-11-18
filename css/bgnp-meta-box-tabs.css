@@ -1,0 +1,33 @@
+/*******************
+ * Meta boxes (Tabs)
+ ******************/
+ 
+ul.bgnp-metabox-tabs {
+	display: none;
+	margin-top: 12px;
+	margin-bottom: 3px;
+}
+
+.bgnp-metabox-tabs-div ul {
+	list-style: none;
+}
+
+.bgnp-heading {
+	padding-left: 10px;
+}
+
+.bgnp-metabox-tabs-div div.bgnp-tab-panel {
+	overflow: auto;
+	padding: 0.5em 0.9em;
+	border: 1px solid #ddd;
+}
+
+.inside .bgnp-tab-panel .form-table th {
+	font-size: 13px;
+	font-style: Helvetica;
+	width: 140px !important;
+}
+
+img.bgnp_meta_help {
+	cursor: pointer;
+}

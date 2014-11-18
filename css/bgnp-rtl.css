@@ -1,0 +1,16 @@
+/**
+ * R(ows)T(ables)L(ables) support
+ */
+tr.row {
+	padding: 5px 0 0 0;
+	margin: 5px 0 0 0;
+}
+
+h4 {
+	clear: both;
+	margin: 2em 0 0 0;
+}
+
+label.meta-textarea, input.textinput {
+	width: 500 px;
+}
