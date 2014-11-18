@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin generates not one but two, highly customizable Google News Editors’ Picks RSS Feeds. Increase your news site traffic with featured content on Google News!
+Plugin generates not one but two, highly customizable Google News Editors’ Picks RSS Feeds. Increase your news site traffic from Google News!
 
 == Description ==
 
