@@ -48,6 +48,17 @@ You can use the built in installer and upgrader, or you can install the plugin m
 11. Do not change your Permalink Settings, just re-save by clicking "Save Settings" under Permalinks.
 12. Return to Google News > Editors’ Picks and submit the newly created Google News Editors’ Picks RSS Feeds in Google Webmaster Tools via "Submit RSS Feeds".
 
+== Screenshots ==
+
+1. Admin Dashboard Page
+2. Admin Dashboard Settings Page Top
+3. Admin Dashboard Settings Page Middle
+4. Admin Dashboard Settings Page Bottom
+5. Custom Meta Box With Tooltip Helper
+6. Google News Homepage RSS Feed
+7. Editors Picks On Google News Homepage
+
+
 == Changelog ==
 
 Version 1.0
