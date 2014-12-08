@@ -1,13 +1,15 @@
 === Google News Editors Picks Feed Generator ===
 Contributors: Peoples_Pundit
+Author URI: http://www.googlenewsplugin.com
+Donate link: http://www.googlenewsplugin.com
 Tags: Google News, Editors Picks, RSS, RSS feeds, feed generator, Google, seo, plugin, news sitemaps, google webmaster tools, webmaster tools
-Requires at least: 3.8
-Tested up to: 3.9
+Requires at least: 3.7
+Tested up to: 4.1
 Stable tag: 1.0
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin generates not one but two, highly customizable Google News Editors’ Picks RSS Feeds. Increase your news site traffic from Google News!
+Plugin generates not one but two, highly customizable Google News Editors’ Picks RSS Feeds. Increase your news site traffic with featured content on Google News!
 
 == Description ==
 
@@ -16,27 +18,33 @@ Customize required feed images, names, titles, descriptions and more! Exclude ar
 In order to have your website included in Google News, you will have to [suggest it for inclusion](https://support.google.com/news/publisher/answer/40787?hl=en) first. This plugin is nearly pointless without site inclusion.
 Serious news sites should consider upgrading to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) to take advantage of all tools available to Google News Publishers and optimize their site for Google News.
 
-RSS features:
+=RSS Features:=
 
 * Set default values and customize RSS feeds
-* Add required image or logo to Google News Editors’ Picks RSS Feeds
+* Branding matters! Add required images/logos to EACH Google News Editors’ Picks RSS Feeds
 * Exclude articles from the feeds from lightweight custom meta box
-* Custom meta box includes powerful qTip2 tooltip helper functions
+* Custom meta box includes powerful qTip2 tooltip helper popup window functions
 * Ping Webmaster Tools when feeds are updated with smart ping technology
-* Submit and set Editors’ Picks feeds to Google Webmaster Tools
+* Google News Publisher Help Forum Resources menu, including feed validator
+* Easy submission to set Editors’ Picks RSS feeds in Google Webmaster Tools
+* Called the "must-have WordPress extension" by Google News Help Forum staff!
 
-Premium features:
+=Premium features:=
 
-* Set default values and customize RSS feeds
-* Add required image or logo to Google News Editors’ Picks RSS Feeds
-* Exclude articles from the feeds from lightweight custom meta box
-* Custom meta box includes powerful qTip2 tooltip helper functions
-* Include standout tag for standout content
-* Include news_metatag for Search Engine Optimization
-* Include both syndication-source metatag and  original-source metatag
-* Generate feature-rich XML Google News Sitemap that will get stories indexed, fast!
-* Ping Webmaster Tools when news sitemap and RSS feeds are updated with smart ping technology
-* Submit and set XML News Sitemap and Editors’ Picks feeds to Google Webmaster Tools
+* Easy Single & Multi-Site Setup: Set easy-to-override default values for news sitemap and customize RSS feeds
+* Branding Matters: Add required images/logos to EACH Google News Editors’ Picks RSS Feeds
+* Only The News: Exclude articles from XML news sitemap and news feeds from lightweight custom meta box
+* Easy & Lightweight: Custom meta box includes powerful qTip2 tooltip helper popup window functions
+* Get Featured On Google News: Add standout tag to standout content to highlight exceptional journalism and get featured on Google News
+* Use It, Not Abuse It: Standout Tag Tracker© tracks number of articles tagged as standout content to ensure compliance with Google terms of use
+* Search Engine Optimization: Correctly add up to 10 news_keywords metatag for SEO
+* Give Credit Where Credit Is Due: Include both syndication-source metatag and original-source metatag (i.e. guest or re-published contributor content)
+* Get Articles Indexed Fast: Generate feature-rich XML Google News Sitemap that will get your stories up on Google News in minutes!
+* Find Interested Readers: Add up to 12 <news:keywords> XML tags to news sitemap that will get your stories indexed in the correct location, fast!
+* Google Finance Pays: Add up to 5 <news:stock_tickers> XML tags to news sitemap that will get your stories indexed on Google Finance, fast!
+* Google Hates Spammers: Ping Webmaster Tools when news sitemap and RSS news feeds are updated with smart ping technology
+* Get A Clue: Expanded Google News Publisher Help Forum Resources menu, including feed validator, Associate YouTube, etc.
+* Easy Integration: Easy submission for XML News Sitemap and Editors’ Picks RSS feeds to Google Webmaster Tools
 
 Upgrade to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) or view plugin site to learn about consolidating your publisher options into one, lightweight server-load saving plugin.
 
@@ -73,17 +81,31 @@ You can use the built in installer and upgrader, or you can install the plugin m
 6. Google News Homepage RSS Feed
 7. Editors Picks On Google News Homepage
 
-== FAQs ==
+== Frequently Asked Questions ==
 
-<strong>Why are my custom Google News Editors’ Picks RSS feeds giving me a 404 error?</strong>
+=Why are my custom Google News Editors’ Picks RSS feeds giving me a 404 error?=
 
 If no feed appears when you click on the “View RSS Feed” button, which will give you a 404 error, then go to “Permalinks” under “Settings” in the left-hand side WP column, and click “Save Settings” to generate your custom RSS feeds. Return to the Editors’ Picks admin page and once again click on the “View RSS Feed” button. You will now see your feed.
 
 For more information on how to set up your custom Editors’ Picks, read the [following feed tutorial](http://bit.ly/YMGVof).
 
+=Will I lose settings or data if I update to the Premium WordPress Google News Plugin?=
+
+Good news! No. Without getting into the weeds, if you follow the instructions (i.e. deactivate feeds plugin first) the premium version will use the same database table and settings.
+
 == Changelog ==
 
-Version 1.0
+= 1.2 - December 8, 2014 =
+
+**Improvements**
+
+* Added additional tutorials to optimize sites.
+* Improved performance on post query to reduce server load even more!
+* Added tip jar.
+
+= 1.0 - November 17, 2014 =
+
+* Version 1.0 Initial Release
 
 == Tags ==
 Google News, Editors Picks, RSS, RSS feeds, feed generator, Google, seo, plugin, news sitemaps, google webmaster tools, webmaster tools

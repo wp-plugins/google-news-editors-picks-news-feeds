@@ -133,9 +133,9 @@ function bgnp_general_settings_page() {
 			<div id="post-body-content">
 			<h2><?php _e( 'General Instructions', 'google-news-editors-picks-feeds' ) ?></h2>
 			<hr size="3">
-	          <ol>
+	          	<ol>
 				<li>You <strong>MUST</strong> have <a href="http://bit.ly/1olZCua" target="_blank">suggested inclusion</a> of news site in Google News.</li>
-	                <li>You <strong>MUST</strong> <a href="http://bit.ly/1raApEY" target="_blank">submit your new Editors’ Picks RSS Feeds</a> to Google just as you did for your site.</li>
+	                		<li>You <strong>MUST</strong> <a href="http://bit.ly/1raApEY" target="_blank">submit your new Editors’ Picks RSS Feeds</a> to Google just as you did for your site.</li>
 				<li>You <strong>MUST</strong> set feed settings before using the plugin.</li>
 				<li>Read instructions below <strong>FIRST</strong> before creating RSS feeds.</li>	                               
 			</ol>
@@ -158,6 +158,18 @@ function bgnp_general_settings_page() {
 				<li>Your picks should reflect the best pieces of journalism on your site at any given time! Do not include links to offers, how-to articles, ads, or weather forecasts.</li>
 				<li>Plugin also creates a section-based feed (e.g., Technology), which you can submit along with one homepage feed.</li>
 				<li><strong>AFTER</strong> setting and "saving" feed options, go to "Permalinks" under "Settings" and click "Save Settings" to generate RSS feeds.</li>
+				<li>Login to Google Webmaster Tools with the seemingly integrated postbox on the feed settings page, and submit the RSS feed.</li>
+			</ol>
+			<hr size="3">
+			<?php echo '<img style="float:left" src="' . bgnp_URL . '/images/bgnp-webmaster-tools_50x50.png"/>'; ?>
+			<h2><?php _e( 'Update Instructions', 'google-news-editors-picks-feeds' ) ?></h2>
+			<hr size="3">
+			<ol>
+	                		<li>Purchase your Premium WordPress Google News Plugin and 1-year support plan with license <a href="http://bit.ly/1yZNiC7" target="_blank">here.</a></li>
+				<li>A link to the plugin zip file will be emailed to you immediately after purchase. Check your spam folder if necessary.</li>
+				<li>Deactivate Editors’ Picks RSS Feed Plugin before activiating the premium plugin, which will still recognize prior database/feed settings.</li>
+				<li>Activate Premium WordPress Google News Plugin and enter the license key under "License" tab. Go to dashboard before "Sitemap Settings" tab for instructions.</li>
+				<li><strong>AFTER</strong> setting and "saving" sitemap and feed options, go to "Permalinks" under "Settings" and click "Save Settings" to generate RSS feeds.</li>
 				<li>Login to Google Webmaster Tools with the seemingly integrated postbox on the feed settings page, and submit the RSS feed.</li>
 			</ol>
 		<hr size="3"> 
@@ -195,7 +207,12 @@ function bgnp_upgrade_settings_page() {
 			<p><li>With the Editors Picks RSS Feeds Generator, you can add proper images to your RSS-to-email newsletter in a matter of minutes!</li>
 			<li>Some email programs, like Outlook, will place images and wrap your text -- if they even can -- in unattractive formats.</li>
 			<li>Tutorial covers what the RSS media tag is, how to use it, and how to get your MailChimp campaigns attractive to your readers.</li>
-			<li>Checkout the <a href="http://googlenewsplugin.com/enhance-mailchimp-newsletter-with-editors-picks-rss-feeds/" target="_blank">Enhance MailChimp With Feeds Generator</a> tutorial to learn more!</li></p>
+			<li>Checkout the <a href="http://bit.ly/1wptmuC" target="_blank">Enhance MailChimp With Feeds Generator</a> tutorial to learn more!</li></p>
+			<h3><?php _e( 'Do More With Section-based Editors’ Picks', 'google-news-editors-picks-feeds' ) ?></h3>
+			<p><strong>Significantly Increase Traffic From Google News Diversifying Feeds</strong></span></p>
+			<p><li>With the Editors Picks RSS Feeds Generator, you can add topic-specific feeds.</li>
+			<li>Learn how to strengthen your news brand, and inch into categories and new markets.</li>
+			<li>Checkout the <a href="http://bit.ly/1IpUv3H" target="_blank">Tutorial</a> to learn more!</li></p>
 		<hr size="3"> 
 			</div> <!-- #post-body-content -->
 		</div> <!-- #post-body -->
@@ -391,6 +408,13 @@ function bgnp_settings_page_sidebar() {
 			<?php echo '<a href="http://bit.ly/1sKtyyj" target="_blank"><img style="float:left" src="' . bgnp_URL . '/images/you-tube-icon.png">Associate YouTube</a>'; ?>
 			<br /><br />
 	    	</div> <!-- .postbox -->
+	    	<h3>Even A Dollar Helps!</hr3>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="92XNH8SCVRSTL">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
 	</div> <!-- .inner-sidebar -->
 	<?php
 }
