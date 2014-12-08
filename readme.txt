@@ -5,7 +5,7 @@ Donate link: http://www.googlenewsplugin.com
 Tags: Google News, Editors Picks, RSS, RSS feeds, feed generator, Google, seo, plugin, news sitemaps, google webmaster tools, webmaster tools
 Requires at least: 3.7
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.2
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ Customize required feed images, names, titles, descriptions and more! Exclude ar
 In order to have your website included in Google News, you will have to [suggest it for inclusion](https://support.google.com/news/publisher/answer/40787?hl=en) first. This plugin is nearly pointless without site inclusion.
 Serious news sites should consider upgrading to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) to take advantage of all tools available to Google News Publishers and optimize their site for Google News.
 
-=RSS Features:=
+= RSS Features: =
 
 * Set default values and customize RSS feeds
 * Branding matters! Add required images/logos to EACH Google News Editors’ Picks RSS Feeds
@@ -29,7 +29,7 @@ Serious news sites should consider upgrading to the [WordPress Google News Plugi
 * Easy submission to set Editors’ Picks RSS feeds in Google Webmaster Tools
 * Called the "must-have WordPress extension" by Google News Help Forum staff!
 
-=Premium features:=
+= Premium features: =
 
 * Easy Single & Multi-Site Setup: Set easy-to-override default values for news sitemap and customize RSS feeds
 * Branding Matters: Add required images/logos to EACH Google News Editors’ Picks RSS Feeds
@@ -83,13 +83,13 @@ You can use the built in installer and upgrader, or you can install the plugin m
 
 == Frequently Asked Questions ==
 
-=Why are my custom Google News Editors’ Picks RSS feeds giving me a 404 error?=
+= Why are my custom Google News Editors’ Picks RSS feeds giving me a 404 error? =
 
 If no feed appears when you click on the “View RSS Feed” button, which will give you a 404 error, then go to “Permalinks” under “Settings” in the left-hand side WP column, and click “Save Settings” to generate your custom RSS feeds. Return to the Editors’ Picks admin page and once again click on the “View RSS Feed” button. You will now see your feed.
 
 For more information on how to set up your custom Editors’ Picks, read the [following feed tutorial](http://bit.ly/YMGVof).
 
-=Will I lose settings or data if I update to the Premium WordPress Google News Plugin?=
+= Will I lose settings or data if I update to the Premium WordPress Google News Plugin? =
 
 Good news! No. Without getting into the weeds, if you follow the instructions (i.e. deactivate feeds plugin first) the premium version will use the same database table and settings.
 
