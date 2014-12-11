@@ -18,6 +18,16 @@ Customize required feed images, names, titles, descriptions and more! Exclude ar
 In order to have your website included in Google News, you will have to [suggest it for inclusion](https://support.google.com/news/publisher/answer/40787?hl=en) first. This plugin is nearly pointless without site inclusion.
 Serious news sites should consider upgrading to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) to take advantage of all tools available to Google News Publishers and optimize their site for Google News.
 
+= Holiday Season Sale! =
+
+* Enter Discount Code MULTI-WPGNP-25 For 25% Off Multi-Site Purchases
+
+* Enter Discount Code SINGLE-WPGNP-20 For 20% Off Single-Site Purchases
+
+= Find Out How To Get 30% Off The Premium WordPress Google News Plugin! =
+
+* Request Details - Fill Out [Contact Form](http://googlenewsplugin.com/support/)
+
 = RSS Features: =
 
 * Set default values and customize RSS feeds
