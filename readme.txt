@@ -34,6 +34,7 @@ Serious news sites should consider upgrading to the [WordPress Google News Plugi
 * Branding matters! Add required images/logos to EACH Google News Editors’ Picks RSS Feeds
 * Exclude articles from the feeds from lightweight custom meta box
 * Custom meta box includes powerful qTip2 tooltip helper popup window functions
+* Use [Custom Meta Box](http://googlenewsplugin.com/custom-meta-boxes/) to tailor feed-friendly description for news feeds. (A big deal when exporting RSS picks)
 * Ping Webmaster Tools when feeds are updated with smart ping technology
 * Google News Publisher Help Forum Resources menu, including feed validator
 * Easy submission to set Editors’ Picks RSS feeds in Google Webmaster Tools
@@ -43,15 +44,16 @@ Serious news sites should consider upgrading to the [WordPress Google News Plugi
 
 * Easy Single & Multi-Site Setup: Set easy-to-override default values for news sitemap and customize RSS feeds
 * Branding Matters: Add required images/logos to EACH Google News Editors’ Picks RSS Feeds
-* Only The News: Exclude articles from XML news sitemap and news feeds from lightweight custom meta box
-* Easy & Lightweight: Custom meta box includes powerful qTip2 tooltip helper popup window functions
-* Get Featured On Google News: Add standout tag to standout content to highlight exceptional journalism and get featured on Google News
-* Use It, Not Abuse It: Standout Tag Tracker© tracks number of articles tagged as standout content to ensure compliance with Google terms of use
-* Search Engine Optimization: Correctly add up to 10 news_keywords metatag for SEO
-* Give Credit Where Credit Is Due: Include both syndication-source metatag and original-source metatag (i.e. guest or re-published contributor content)
-* Get Articles Indexed Fast: Generate feature-rich XML Google News Sitemap that will get your stories up on Google News in minutes!
-* Find Interested Readers: Add up to 12 <news:keywords> XML tags to news sitemap that will get your stories indexed in the correct location, fast!
-* Google Finance Pays: Add up to 5 <news:stock_tickers> XML tags to news sitemap that will get your stories indexed on Google Finance, fast!
+* Write It Right: Use [Custom Meta Box](http://googlenewsplugin.com/custom-meta-boxes/) to tailor feed-friendly description for news feeds. (A big deal when exporting RSS picks)
+* Only The News: Exclude articles from XML Google News Sitemap and news feeds from lightweight Custom Meta Box
+* Easy & Lightweight: [Custom Meta Box](http://googlenewsplugin.com/custom-meta-boxes/) includes powerful qTip2 tooltip helper popup window functions
+* Get Featured On Google News: Add [standout tag](http://googlenewsplugin.com/standout-tag-plus-tracker/) to standout content to highlight exceptional journalism and get featured on Google News
+* Use It, Not Abuse It: [Standout Tag PLUS Tracker©](http://googlenewsplugin.com/standout-tag-plus-tracker/) tracks number of articles tagged as standout content to ensure compliance with Google terms of use
+* Search Engine Optimization: Correctly add up to 10 news_keywords metatag for SEO | [news_keywords metatags Vs. XML tags](http://bit.ly/1z0GXHT)
+* Give Credit Where Credit Is Due: Include both [syndication-source metatag and original-source metatag](http://googlenewsplugin.com/news-tags/) (i.e. guest or re-published contributor content)
+* Get Articles Indexed Fast: Generate feature-rich [XML Google News Sitemap](http://googlenewsplugin.com/google-news-sitemap-generator/) that will get your stories up on Google News in minutes!
+* Find Interested Readers: Add up to 12 news:keywords XML tags to news sitemap that will get your stories indexed in the correct location, fast!
+* Google Finance Pays: Add up to 5 news:stock_tickers XML tags to news sitemap that will get your stories indexed on Google Finance, fast!
 * Google Hates Spammers: Ping Webmaster Tools when news sitemap and RSS news feeds are updated with smart ping technology
 * Get A Clue: Expanded Google News Publisher Help Forum Resources menu, including feed validator, Associate YouTube, etc.
 * Easy Integration: Easy submission for XML News Sitemap and Editors’ Picks RSS feeds to Google Webmaster Tools
