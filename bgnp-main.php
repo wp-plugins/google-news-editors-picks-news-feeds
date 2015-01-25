@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Google News Editors Picks Feed Generator
-Version: 1.2
+Version: 1.3
 Plugin URI: http://www.googlenewsplugin.com
 Donate link: http://www.googlenewsplugin.com
 Description: Generates not one but two, highly customizable Google News Editors’ Picks RSS Feeds. Serious news sites should upgrade to the WordPress Premium Google News Plugin (http://www.googlenewsplugin.com) to take advantage of all tools available to Google News Publishers and optimize their site(s) for Google News.
