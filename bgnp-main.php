@@ -11,8 +11,7 @@ Text Domain: google-news-editors-picks-feeds
 Domain Path: /languages/
 License: GPL v3
 
-Google News Editors’ Picks Feed Generator
-Copyright (C) 2008-2014, PPD Ventures LLC - ppd.ventures.llc@gmail.com
+* Copyright (C) 2008-2014, PPD Ventures LLC - ppd.ventures.llc@gmail.com
 
 */
 
