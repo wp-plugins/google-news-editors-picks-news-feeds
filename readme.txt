@@ -5,7 +5,7 @@ Donate link: http://www.googlenewsplugin.com
 Tags: Google News, Editors Picks, RSS, RSS feeds, feed generator, Google, seo, plugin, news sitemaps, google webmaster tools, webmaster tools
 Requires at least: 3.7
 Tested up to: 4.1
-Stable tag: 1.2
+Stable tag: 1.5
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ Customize required feed images, names, titles, descriptions and more! Exclude ar
 In order to have your website included in Google News, you will have to [suggest it for inclusion](https://support.google.com/news/publisher/answer/40787?hl=en) first. This plugin is nearly pointless without site inclusion.
 Serious news sites should consider upgrading to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) to take advantage of all tools available to Google News Publishers and optimize their site for Google News.
 
-= Holiday Season Sale! =
+= WordPress Directory Discount! =
 
 * Enter Discount Code MULTI-WPGNP-25 For 25% Off Multi-Site Purchases
 
@@ -32,7 +32,7 @@ Serious news sites should consider upgrading to the [WordPress Google News Plugi
 
 * Set default values and customize RSS feeds
 * Branding matters! Add required images/logos to EACH Google News Editors’ Picks RSS Feeds
-* Exclude articles from the feeds from lightweight custom meta box
+* Exclude/include articles from the feeds from lightweight custom meta box
 * Custom meta box includes powerful qTip2 tooltip helper popup window functions
 * Use [Custom Meta Box](http://googlenewsplugin.com/custom-meta-boxes/) to tailor feed-friendly description for news feeds. (A big deal when exporting RSS picks)
 * Ping Webmaster Tools when feeds are updated with smart ping technology
@@ -106,6 +106,15 @@ For more information on how to set up your custom Editors’ Picks, read the [fo
 Good news! No. Without getting into the weeds, if you follow the instructions (i.e. deactivate feeds plugin first) the premium version will use the same database table and settings.
 
 == Changelog ==
+
+= 1.5 - January 30, 2015 =
+
+**Improvements**
+
+* Changed "Exclude" articles to "Include" instead via multiple customer requests.
+* Improved performance on article query to reduce server load even more!
+* Changed to new WP Query to avoid periodical issues with including feeds.
+* Fixed "Missing/Incorrect Header" error.
 
 = 1.2 - December 8, 2014 =
 

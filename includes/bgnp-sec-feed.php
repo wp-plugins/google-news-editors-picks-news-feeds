@@ -43,19 +43,22 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 	 * @since 2.0.0
 	 */
 	do_action( 'rss2_head' );
+	
 	?>
-<?php foreach ($posts as $post) {
-	setup_postdata($post); 
-	$bgnp_sec_feed = htmlspecialchars(stripcslashes(get_post_meta($post->ID, '_bgnp_sec_feed', true)));
-	$bgnp_rss_meta = htmlspecialchars(stripcslashes(get_post_meta($post->ID, '_bgnp_rss_meta', true)));
-	if($bgnp_sec_feed != 'true'){
-	// Resume adding feed template tags
+<?php
+if ( $sec_feed_query->have_posts() ) :
+while ( $sec_feed_query->have_posts() ) : $sec_feed_query->the_post(); global $post;
+	// Resume adding Editors’ Picks feed template tags	
 ?>
-
 	<item>
 		<title><?php echo get_the_title($post->ID); ?></title>
 		<link><?php echo get_permalink($post->ID); ?></link>
-		<description><?php echo '<![CDATA['.$bgnp_rss_meta.' <br/><br/>Read Full Article: <a href="'.get_permalink($post->ID).'">'.get_the_title($post->ID).'</a>'.']]>'; ?></description>
+	<?php $bgnp_rss_meta = htmlspecialchars(stripcslashes(get_post_meta( $post->ID, '_bgnp_rss_meta', true ))); ?>
+	<?php if ($bgnp_rss_meta) : ?>
+		<description><?php echo '<![CDATA[<p>'.$bgnp_rss_meta.'</p> <br/><br/>Read Full Article: <a href="'.get_permalink($post->ID).'">'.get_the_title($post->ID).'</a>'.']]>'; ?></description>
+	<?php else: ?>
+		<description><![CDATA[<?php the_excerpt_rss(); ?>]]></description>
+	<?php endif ?>
 		<dc:creator><![CDATA[<?php the_author() ?>]]></dc:creator>
 		<pubDate><?php bgnp_rss_date( strtotime($post->post_date_gmt) ); ?></pubDate>
 	<?php if(get_the_post_thumbnail()): ?>
@@ -71,6 +74,8 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 	do_action( 'rss2_item' );
 	?>
 	</item>
-<?php }} ?>
+<?php endwhile;
+endif;
+wp_reset_postdata(); ?>
 </channel>
 </rss>

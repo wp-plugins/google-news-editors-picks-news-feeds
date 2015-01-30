@@ -46,8 +46,18 @@ add_filter('init','bgnp_init_rss_feeds');
 function bgnp_do_rss_feed() {
 	global $bgnp_version, $wpdb;
 	
-	$postCount = 5; // Google only wants the last 5 homepage picks in the feed
-	$posts = query_posts('showposts=' . $postCount);
+	$args = array(
+		'posts_per_page' => 5,
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'meta_query' => array(
+			array(
+			'key' => '_bgnp_rss_feed',
+			'value' => 'true',
+			)
+		)
+	);	
+	$rss_feed_query = new WP_Query( $args );
 	
 	$bgnp_rss_feed_desc = stripslashes(get_option('bgnp_rss_feed_desc'));
 	$bgnp_rss_feed_title = stripslashes(get_option('bgnp_rss_feed_title'));
@@ -65,14 +75,24 @@ function bgnp_do_rss_feed() {
 function bgnp_do_sec_feed() {
 	global $bgnp_version, $wpdb;
 	
-	$postCount = 5; // Google only wants the last 5 section-based picks in the feed
-	$posts = query_posts('showposts=' . $postCount);
+	$args = array(
+		'posts_per_page' => 5,
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'meta_query' => array(
+			array(
+			'key' => '_bgnp_sec_feed',
+			'value' => 'true',
+			)
+		)
+	);	
+	$sec_feed_query = new WP_Query( $args );
 	
 	$bgnp_sec_feed_desc = stripslashes(get_option('bgnp_sec_feed_desc'));
 	$bgnp_sec_feed_title = stripslashes(get_option('bgnp_sec_feed_title'));
 	$bgnp_sec_image_url = get_option('bgnp_sec_image_url');
 	$bgnp_sec_image_alt = stripslashes(get_option('bgnp_sec_image_alt'));
-						
+				
 	//initialize the feed	
 	include bgnp_PATH . '/includes/bgnp-sec-feed.php';
 }

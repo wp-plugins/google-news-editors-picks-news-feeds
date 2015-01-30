@@ -42,31 +42,32 @@ function bgnp_add_meta_boxes() {
     	echo '<input type="hidden" name="bgnp_noncename" id="bgnp_noncename" value="' . wp_create_nonce( bgnp_BASENAME ) . '" />';}
 ?>
 <div class="bgnp-metabox-tabs-div">
-	<div class="bgnp-tab-panel" id="bgnp_feed">
+	<div class="bgnp-tab-panel" id="bgnp_feed" style="display: none">
+		<h4 class="bgnp-heading"><?php _e( 'Editors’ Picks', 'premium-google-news-plugin' ); ?></h4>
 		<table class="form-table">
 			<tr>
 				<th scope="row">
-					<label for="meta-checkbox"><?php _e( 'Homepage RSS :', 'google-news-editors-picks-feeds' )?></label>
+					<label for="meta-checkbox"><?php _e( 'Homepage RSS :', 'premium-google-news-plugin' )?></label>
 					<?php echo '<img src="' . bgnp_URL . '/images/bgnp-question-mark.png" class="alignright bgnp_meta_help" alt="' . esc_attr($meta_field_help['rss_feed_help']) . '">'; ?>
 				</th>
 				<td>
 					<input type="checkbox" name="bgnp_rss_feed" <?php if ($bgnp_rss_feed) echo 'checked=\"checked\"'; ?> value="true" />
-					<span> Checking excludes article from the main homepage RSS Feed.</span>
+					<span> Check to include article in the main homepage RSS Feed.</span>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">
-					<label for="meta-checkbox"><?php _e( 'Section-Based RSS:', 'google-news-editors-picks-feeds' )?></label>
+					<label for="meta-checkbox"><?php _e( 'Section-Based RSS:', 'premium-google-news-plugin' )?></label>
 					<?php echo '<img src="' . bgnp_URL . '/images/bgnp-question-mark.png" class="alignright bgnp_meta_help" alt="' . esc_attr($meta_field_help['sec_feed_help']) . '">'; ?>
 				</th>
 				<td>
 					<input type="checkbox" name="bgnp_sec_feed" <?php if ($bgnp_sec_feed) echo 'checked=\"checked\"'; ?> value="true" />
-					<span> Checking excludes article from the section-based RSS Feed.</span>
+					<span> Check to include article in the section-based RSS Feed.</span>
 				</td>
 			</tr>
 			<tr>
 				<th scope="row">
-					<label for="meta-textarea"><?php _e( 'Meta Description:', 'google-news-editors-picks-feeds') ?></label>
+					<label for="meta-textarea"><?php _e( 'Meta Description:', 'premium-google-news-plugin') ?></label>
 					<?php echo '<img src="' . bgnp_URL . '/images/bgnp-question-mark.png" class="alignright bgnp_meta_help" alt="' . esc_attr($meta_field_help['meta_help']) . '">'; ?>
 				</th>
 				<td>
@@ -99,15 +100,15 @@ function bgnp_save_postdata( $post_id ) {
 		if ( !current_user_can( 'edit_post', $post_id ) )
 			return $post_id;
 	}
-
-	$bgnp_rss_feed	= $_POST['bgnp_rss_feed'];
-	$bgnp_sec_feed	= $_POST['bgnp_sec_feed'];
-	$bgnp_rss_meta	= $_POST['bgnp_rss_meta'];
+	
+	$bgnp_rss_feed          = $_POST['bgnp_rss_feed'];
+	$bgnp_sec_feed          = $_POST['bgnp_sec_feed'];
+	$bgnp_rss_meta  	= $_POST['bgnp_rss_meta'];
 
 	delete_post_meta($post_id, '_bgnp_rss_feed');
 	delete_post_meta($post_id, '_bgnp_sec_feed');
 	delete_post_meta($post_id, '_bgnp_rss_meta');
-
+	
 	add_post_meta($post_id, '_bgnp_rss_feed', $bgnp_rss_feed);
 	add_post_meta($post_id, '_bgnp_sec_feed', $bgnp_sec_feed);
 	add_post_meta($post_id, '_bgnp_rss_meta', $bgnp_rss_meta);
