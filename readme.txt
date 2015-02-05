@@ -5,7 +5,7 @@ Donate link: http://www.googlenewsplugin.com
 Tags: Google News, Editors Picks, RSS, RSS feeds, feed generator, Google, seo, plugin, news sitemaps, google webmaster tools, webmaster tools
 Requires at least: 3.7
 Tested up to: 4.1
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -108,6 +108,12 @@ Good news! No. Without getting into the weeds, if you follow the instructions (i
 == Changelog ==
 
 = 1.5 - January 30, 2015 =
+
+= 1.6 - February 4, 2015 =
+
+** Fix **
+
+*Fixed the magically disappearing meta box (Forgot line of code)
 
 **Improvements**
 
