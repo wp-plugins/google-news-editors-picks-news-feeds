@@ -107,17 +107,17 @@ Good news! No. Without getting into the weeds, if you follow the instructions (i
 
 == Changelog ==
 
-= 1.5 - January 30, 2015 =
-
 = 1.6 - February 4, 2015 =
 
 ** Fix **
 
-*Fixed the magically disappearing meta box (Forgot line of code)
+*Fixed the magically disappearing meta box.
+
+= 1.5 - January 30, 2015 =
 
 **Improvements**
 
-* Changed "Exclude" articles to "Include" instead via multiple customer requests.
+* Changed from "Exclude" articles to "Include" via multiple customer requests.
 * Improved performance on article query to reduce server load even more!
 * Changed to new WP Query to avoid periodical issues with including feeds.
 * Fixed "Missing/Incorrect Header" error.
