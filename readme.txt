@@ -109,9 +109,9 @@ Good news! No. Without getting into the weeds, if you follow the instructions (i
 
 = 1.6 - February 4, 2015 =
 
-** Fix **
+**Fix**
 
-*Fixed the magically disappearing meta box.
+* Fixed the magically disappearing meta box.
 
 = 1.5 - January 30, 2015 =
 
