@@ -51,15 +51,17 @@ Serious news sites should consider upgrading to the [WordPress Google News Plugi
 * Easy Integration: Easy submission for XML News Sitemap and Editors’ Picks RSS feeds to Google Webmaster Tools
 
 = WordPress Google News Plugin 2.0 Release Announcement: =
-*Ability to add Subtitles without theme coding.
-*Schema In-Depth Article Markup
-*Schema Organization Markup 
-*Social Network Knowledge Graph
-*Schema Itemprop tags and other features prioritized by Google on the Google News platform.
-*Changed "Exclude" articles from Google News Editors' Picks feeds to "Include" articles.
-*Added WP admin top menu bar for convenient access to multiple features.
+
+* Ability to add Subtitles without theme coding
+* Schema In-Depth Article Markup
+* Schema Organization Markup 
+* Social Network Knowledge Graph
+* Schema Itemprop tags and other features prioritized by Google on the Google News platform
+* Changed "Exclude" articles from Google News Editors' Picks feeds to "Include" articles
+* Added WP admin top menu bar for convenient access to multiple features
 
 = Add On =
+
 * Post to Article Label conversion 
 
 What is the Post to Article Label conversion add-on? WordPress is tailored to blogs even after all these years. News organizations publish "Articles," not "Posts." Schema relies on "Article" markup, not "Post" markup. So, we should, too. The conversion will change the label on the WP dashboard and output to Article(s), without destroying past projects.
@@ -70,7 +72,6 @@ Upgrade to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) o
 
 = Multi-Site Compatible =
 This plugin, unlike some others, is fully Multi-Site compatible. The feeds work in the Network settings and you can copy the settings from one blog to another, or make blogs default to the settings for a specific blog.
-
 
 Find answers for Google News-related questions in the [Google News Help Forum](http://www.google.com/support/forum/p/news?hl=en)
 
