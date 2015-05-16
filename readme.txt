@@ -18,15 +18,7 @@ Customize required feed images, names, titles, descriptions and more! Exclude ar
 In order to have your website included in Google News, you will have to [suggest it for inclusion](https://support.google.com/news/publisher/answer/40787?hl=en) first. This plugin is nearly pointless without site inclusion.
 Serious news sites should consider upgrading to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) to take advantage of all tools available to Google News Publishers and optimize their site for Google News.
 
-= WordPress Directory Discount! =
 
-* Enter Discount Code MULTI-WPGNP-25 For 25% Off Multi-Site Purchases
-
-* Enter Discount Code SINGLE-WPGNP-20 For 20% Off Single-Site Purchases
-
-= Find Out How To Get 30% Off The Premium WordPress Google News Plugin! =
-
-* Request Details - Fill Out [Contact Form](http://googlenewsplugin.com/support/)
 
 = RSS Features: =
 
@@ -57,6 +49,22 @@ Serious news sites should consider upgrading to the [WordPress Google News Plugi
 * Google Hates Spammers: Ping Webmaster Tools when news sitemap and RSS news feeds are updated with smart ping technology
 * Get A Clue: Expanded Google News Publisher Help Forum Resources menu, including feed validator, Associate YouTube, etc.
 * Easy Integration: Easy submission for XML News Sitemap and Editors’ Picks RSS feeds to Google Webmaster Tools
+
+= WordPress Google News Plugin 2.0 Release Announcement: =
+*Ability to add Subtitles without theme coding.
+*Schema In-Depth Article Markup
+*Schema Organization Markup 
+*Social Network Knowledge Graph
+*Schema Itemprop tags and other features prioritized by Google on the Google News platform.
+*Changed "Exclude" articles from Google News Editors' Picks feeds to "Include" articles.
+*Added WP admin top menu bar for convenient access to multiple features.
+
+= Add On =
+* Post to Article Label conversion 
+
+What is the Post to Article Label conversion add-on? WordPress is tailored to blogs even after all these years. News organizations publish "Articles," not "Posts." Schema relies on "Article" markup, not "Post" markup. So, we should, too. The conversion will change the label on the WP dashboard and output to Article(s), without destroying past projects.
+
+And there's more...
 
 Upgrade to the [WordPress Google News Plugin](http://www.googlenewsplugin.com) or view plugin site to learn about consolidating your publisher options into one, lightweight server-load saving plugin.
 
