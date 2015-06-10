@@ -9,14 +9,22 @@
 /************************************************************************
  * Hook adding Premium Google News Plugin dashboard link after activation
  ***********************************************************************/
-
 function bgnp_action_links( $links, $file ) {
-    
+ 
 	if ($file == bgnp_BASENAME) {
-	  $settings_link = '<a href="' . get_bloginfo('wpurl') . '/wp-admin/admin.php?page=bgnp_dashboard">Settings</a>';
-	  array_unshift($links, $settings_link);
+		// add link to settings
+		$settings_link = '<a href="' . esc_url( admin_url( 'admin.php?page=bgnp_dashboard' ) ) . '">' . __( 'Settings', 'google-news-editors-picks-feeds' ) . '</a>';
+		array_unshift( $links, $settings_link );
+		
+		// add link to docs
+		$faq_link = '<a href="http://googlenewsplugin.com/faqs/">' . __( 'FAQs', 'google-news-editors-picks-feeds' ) . '</a>';
+		array_unshift( $links, $faq_link );
+		
+		// add link to premium support
+		$premium_link = '<a href="http://www.googlenewsplugin.com/">' . __( 'Premium Upgrade', 'google-news-editors-picks-feeds' ) . '</a>';
+		array_unshift( $links, $premium_link );
 	}
-	    
+			
 	return $links;
 }
 add_filter('plugin_action_links', 'bgnp_action_links', 10, 2);
@@ -270,10 +278,10 @@ function bgnp_feed_settings_page() {
 		    			<?php echo '<a href="http://bit.ly/1lQlyaZ" target="_blank"><img class="alignright bgnp_admin_help" src="' . bgnp_URL . '/images/bgnp-question-mark.png"></a>'; ?>
 		    		</th>
 		    		<td>
-		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_rss_feed_title)) ?>" type="text" name="bgnp_rss_feed_title" size="50" /></textarea>
+		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_rss_feed_title)) ?>" type="textarea" name="bgnp_rss_feed_title" size="50" /></textarea>
 		    			<br /><p> e.g. News Site’s (homepage) editor’s picks</p>
 		    		<br />
-		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_sec_feed_title)) ?>" type="text" name="bgnp_sec_feed_title" size="50" /></textarea>
+		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_sec_feed_title)) ?>" type="textarea" name="bgnp_sec_feed_title" size="50" /></textarea>
 		    			<br /><p> e.g. News Site’s (section-based) editor’s picks</p>
 		    		<hr size="3">
 		    		</td>
@@ -284,10 +292,10 @@ function bgnp_feed_settings_page() {
 		    			<?php echo '<a href="http://bit.ly/1lQlyaZ" target="_blank"><img class="alignright bgnp_admin_help" src="' . bgnp_URL . '/images/bgnp-question-mark.png"></a>'; ?>
 		    		</th>
 		    		<td>
-		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_rss_feed_desc)) ?>" type="text" name="bgnp_rss_feed_desc" size="50" /></textarea>
+		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_rss_feed_desc)) ?>" type="textarea" name="bgnp_rss_feed_desc" size="50" /></textarea>
 		    			<br /><p> e.g. News Site’s best (homepage) articles of the day.</p>
 		    		<br />
-		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_sec_feed_desc)) ?>" type="text" name="bgnp_sec_feed_desc" size="50" /></textarea>
+		    			<input value="<?php echo htmlspecialchars(stripslashes($bgnp_sec_feed_desc)) ?>" type="textarea" name="bgnp_sec_feed_desc" size="50" /></textarea>
 		    			<br /><p> e.g. News Site’s best (section-based) articles of the day.</p>
 		    		<hr size="3">
 		    		</td>
@@ -315,12 +323,12 @@ function bgnp_feed_settings_page() {
 		    	</tr>
 		    	<tr>
 		    		<th scope="row">
-		    			<label class="select" for="bgnp_image_upload_button"><?php _e( 'RSS Image (Home):', 'premium-google-news-plugin' ) ?></label>
+		    			<label class="upload_image" for="bgnp_image_upload_button"><?php _e( 'RSS Image (Home):', 'premium-google-news-plugin' ) ?></label>
 		    			<?php echo '<a href="http://bit.ly/1lQlyaZ" target="_blank"><img class="alignright bgnp_admin_help" src="' . bgnp_URL . '/images/bgnp-question-mark.png"></a>'; ?>
 		    		</th>
 		    		<td>
-			        	<input id="bgnp_rss_image_url" type="text" size="50" name="bgnp_rss_image_url" value="<?php echo $bgnp_rss_image_url; ?>" />
-			        	<input id="bgnp_rss_image_url" name="bgnp_rss_image_url" class="bgnp_image_upload_button button" type="button" value="Upload Image" />
+			        	<input id="upload_image" type="text" size="50" name="bgnp_rss_image_url" value="<?php echo $bgnp_rss_image_url; ?>" />
+			        	<input id="bgnp_upload_image_button" class="bgnp_upload_image_button button" type="button" value="Upload Image" />
 			        	<br /><span>Enter a URL or upload an image to be used in homepage RSS feed from media library.</span>
 			        	<hr size="3">
 			        	<p><strong>The feed images must follow these specifications:</strong></span></p>
@@ -331,16 +339,16 @@ function bgnp_feed_settings_page() {
 			        	<li>Logo background should be transparent.</li>
 			        	<li>Avoid any whitespace around the logo.</li></p>
 				<hr size="3">
-			        	</td>
+			        </td>
 			</tr>
 		    	<tr>
 		    		<th scope="row">
-		    			<label class="select" for="bgnp_image_upload_button"><?php _e( 'RSS Image (Section):', 'premium-google-news-plugin' ) ?></label>
+		    			<label class="upload_image" for="bgnp_image_upload_button"><?php _e( 'RSS Image (Section):', 'premium-google-news-plugin' ) ?></label>
 		    			<?php echo '<a href="http://bit.ly/1lQlyaZ" target="_blank"><img class="alignright bgnp_admin_help" src="' . bgnp_URL . '/images/bgnp-question-mark.png"></a>'; ?>
 		    		</th>
-			        	<td>
-			        	<input id="bgnp_sec_image_url" type="text" size="50" name="bgnp_sec_image_url" value="<?php echo $bgnp_sec_image_url; ?>" /> 
-			        	<input id="bgnp_sec_image_url" name="bgnp_sec_image_url" class="bgnp_image_upload_button button" type="button" value="Upload Image" />
+		    		<td>
+			        	<input id="upload_image" type="text" size="50" name="bgnp_sec_image_url" value="<?php echo $bgnp_sec_image_url; ?>" />
+			        	<input id="bgnp_upload_image_button" class="bgnp_upload_image_button button" type="button" value="Upload Image" />
 			        	<br /><span>Enter a URL or upload an image to be used in section-based RSS feed from media library.</span>
 			        	<hr size="3">
 			        	<p><strong>The feed images must follow these specifications:</strong></span></p>
@@ -351,7 +359,7 @@ function bgnp_feed_settings_page() {
 			        	<li>Logo background should be transparent.</li>
 			        	<li>Avoid any whitespace around the logo.</li></p>
 				<hr size="3">
-				</td>
+			        </td>
 			</tr>
 		    	<tr>
 		    		<th scope="row">
@@ -359,7 +367,7 @@ function bgnp_feed_settings_page() {
 		    			<?php echo '<a href="http://bit.ly/1lQlyaZ" target="_blank"><img class="alignright bgnp_admin_help" src="' . bgnp_URL . '/images/bgnp-question-mark.png"></a>'; ?>
 		    		</th>
 		    		<td>
-			    		<input value="<?php echo htmlspecialchars(stripslashes($bgnp_rss_image_alt)) ?>" type="text" name="bgnp_rss_image_alt" size="50" /></textarea>
+			    		<input value="<?php echo htmlspecialchars(stripslashes($bgnp_rss_image_alt)) ?>" type="textarea" name="bgnp_rss_image_alt" size="50" /></textarea>
 			    		<br /><p> Enter text to use as alternative for the image. <strong>Must</strong> match feed title.</p>
 			    	</td>
 		    	</tr>
@@ -369,7 +377,7 @@ function bgnp_feed_settings_page() {
 		    			<?php echo '<a href="http://bit.ly/1lQlyaZ" target="_blank"><img class="alignright bgnp_admin_help" src="' . bgnp_URL . '/images/bgnp-question-mark.png"></a>'; ?>
 		    		</th>
 		    		<td>
-			    		<input value="<?php echo htmlspecialchars(stripslashes($bgnp_sec_image_alt)) ?>" type="text" name="bgnp_sec_image_alt" size="50" /></textarea>
+			    		<input value="<?php echo htmlspecialchars(stripslashes($bgnp_sec_image_alt)) ?>" type="textarea" name="bgnp_sec_image_alt" size="50" /></textarea>
 			    		<br /><p> Enter text to use as alternative for the image. <strong>Must</strong> match feed title.</p>
 			    	</td>
 		    	</tr>

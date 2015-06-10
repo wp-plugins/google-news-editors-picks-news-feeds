@@ -5,7 +5,7 @@ Donate link: http://www.googlenewsplugin.com
 Tags: Google News, Editors Picks, RSS, RSS feeds, feed generator, Google, seo, plugin, news sitemaps, google webmaster tools, webmaster tools
 Requires at least: 3.7
 Tested up to: 4.1
-Stable tag: 1.6
+Stable tag: 1.6.1
 License: GPL v3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -115,6 +115,12 @@ For more information on how to set up your custom Editors’ Picks, read the [fo
 Good news! No. Without getting into the weeds, if you follow the instructions (i.e. deactivate feeds plugin first) the premium version will use the same database table and settings.
 
 == Changelog ==
+
+= 1.6.1 - June 9, 2015 =
+
+**Fix**
+
+* Fixed the image uploader. Uploaded wrong js. file last update.
 
 = 1.6 - February 4, 2015 =
 
